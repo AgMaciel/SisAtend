@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+*{margin: 0; padding: 0;}
+
+body {
+    background-color: #F2F2F2;
+}
+
+#email{
+    font-size: medium;
+    color:#223820;
+}
+.tela{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 30vw;
+    height: 100vh;
+    margin: 0px auto;
+}
+
+header{
+    width: 100%;
+	height: 15vw;
+}
+
+#img_logo{
+	height: 100%;
+    display: block;
+    margin: 0px auto;
+}
+
+h3{
+    text-align: center;
+}
+
+#boas_vindas{
+    width: 100%;
+	height: 12vw;
+    text-align: center;
+}
+
+#h1_index{
+    font: 4.5vw 'Roboto 900', sans-serif;
+}
+
+#turma_escolhida{
+    font: 4.5vw 'Roboto 900', sans-serif;
+}
+
+#h3_boas_vindas{
+    font: 1.7vw 'Roboto', sans-serif;
+}
+
+.h3_nome_sistema{
+    font: 1.7vw 'Roboto 400', sans-serif;
+    font-weight: bold
+}
+
+nav{
+    flex: 1 1 0;
+    width: 17vw;
+    text-align: center;
+    padding: 5px;
+}
+
+input{
+    width: 26vw;
+    height: 2vw;
+    padding: 0.5vw 1vw;
+    margin: 0.7vw;
+}
+
+.textOnInput {
+    position: relative;
+}
+.textOnInput label {
+    position: absolute;
+    top: -7%;
+    left: 10%;
+    padding: 2px;
+    z-index: 1;
+}
+.textOnInput label:after {
+    content: " ";
+    background-color: #fff;
+    width: 100%;
+    height: 13px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+label {
+    font: 1.1vw 'Roboto 400', sans-serif;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+.form-control {
+    box-shadow: none !important;
+
+}
+
+.button_link{
+    width: 28vw;
+    height: 3vw;
+    padding: 0.5vw 1vw;
+    margin: 0.7vw;
+    background-color: #36963F;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    color: white;
+    font: 1.5vw 'Roboto', sans-serif;
+}
+
+.button_link:hover{
+    width: 28vw;
+    padding: 0.5vw 1vw;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    color:#36963F;
+    font: 1.7vw 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+	height: 2vw;
+    background-color: rgb(0, 0, 0);
+    font: 0.7vw 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/*===========Pag: selecao_turma===================*/
+
+.turma{
+    width: 28vw;
+    margin: 0px auto;
+}
+
+.button_serie{
+    width: 8vw;
+    height: 3vw;
+    padding: 0.5vw 1vw;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    background-color: #36963F;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    color: white;
+    font: 1.7vw 'Roboto', sans-serif;
+}
+
+.button_serie:hover{
+    width: 8vw;
+    height: 3vw;
+    padding: 0.5vw 1vw;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    color: #36963F;
+    font: 1.7vw 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+/*===========Pag: registro_ocorrencia===================*/
+
+h5{
+    display: block;
+}
+
+h4{
+    margin-top: 1vw;
+    font: 1vw 'Roboto', sans-serif;
+}
+
+.button_atribuir{
+    width: 18vw;
+    height: 3vw;
+    padding: 0.5vw 1vw;
+    margin: 4vw 0vw 0vw 5.5vw;
+    background-color: #36963F;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    color: white;
+    font: 1.5vw 'Roboto', sans-serif;
+}
+
+.button_atribuir:hover{
+    width: 18vw;
+    height: 3vw;
+    padding: 0.5vw 1vw;
+    margin: 4vw 0vw 0vw 5.5vw;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    color:#36963F;
+    font: 1.5vw 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+.buscar{
+    position: relative;
+}
+
+#alunos_selecionados{
+    width: 26.1vw;
+    height: 8vw;
+    padding: 0.5vw 1vw;
+    margin: 0.7vw;
+}
+
+#listaAlunos{
+    display: none;
+    width: 95%;
+    list-style-type: none;
+    margin-left: 8px;
+    padding: 0;
+    position: absolute;
+}
+
+#listaAlunos li span{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ddd;
+    background-color: #f6f6f6;
+    padding: 2px;
+    cursor: pointer;
+}
+
+#listaAlunos li span:hover{
+    background: #eee;
+}
+
+.item-name{
+    margin-left: 7px;
+}
+
+/*-incluido por agis -*/
+
+.button_link.selected {
+    background-color: #223820; /* Cor de fundo verde para a ocorrência selecionada */
+    color: #ffffff; /* Cor do texto branco para a ocorrência selecionada */
+}

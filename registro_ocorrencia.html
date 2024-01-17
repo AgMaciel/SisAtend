@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Sistema de Acompanhamento do Aluno</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Francisco Diego - Ronan - Agis - Samara"/>
+    <meta name="keywords" content="acompanhamento, ifb, aluno, registro, ocorrências"/>
+    <meta name="description" content="Sistema de Acompanhamento do Aluno é uma aplicação para registro de ocorrências.">
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+</head>
+<body onload="subtitulo_ocorrencia();">
+    <section class="tela">
+        <header>
+            <img id="img_logo" src="img/IFB.png" alt="Logo do Instituto Federal Campus Brasília."/>
+        </header>
+        <section id="boas_vindas">
+            <h5 id="email_selecionado">E-mail de registro: fulano@fulano.com</h4>
+            <h5 id="curso_selecionado">Curso: Técnico em informática</h4>
+            <h5 id="serie_selecionada">Série: 1º Ano</h4>
+            <h1 id="turma_escolhida">Turma "X"</h1>
+            <h3 id="h3_boas_vindas">Selecione um ou mais alunos e</h3>
+            <h3 id="h3_boas_vindas">a ocorrência que deseja atribuir</h3>
+        </section>
+        <nav>
+            <h4>Selecione o(s) aluno(s):</h4>
+            <section>
+                <div class="buscar">
+                    <input onkeyup="filtrar()" class="form-control" id="nome_aluno" type="text" name="nome_aluno" placeholder="Nome do aluno" />
+                    <ul id="listaAlunos">
+                        <li onclick="selecionarAluno()"><span class="item-name">Brenda Rezende</span></li>
+                        <li onclick="selecionarAluno()"><span class="item-name">Cecília Moreira</span></li>
+                        <li onclick="selecionarAluno()"><span class="item-name">Daniel Monteiro</span></li>
+                        <li onclick="selecionarAluno()"><span class="item-name">João Vitor das Neves</span></li>
+                        <li onclick="selecionarAluno()"><span class="item-name">Leandro Pereira</span></li>
+                        <li onclick="selecionarAluno()"><span class="item-name">Letícia Castro</span></li>
+                        <li onclick="selecionarAluno()"><span class="item-name">Manuela Rocha</span></li>
+                        <li onclick="selecionarAluno()"><span class="item-name">Paulo da Conceição</span></li>
+                        <li onclick="selecionarAluno()"><span class="item-name">Rodrigo Martins</span></li>
+                        <li onclick="selecionarAluno()"><span class="item-name">Ryan Pires</span></li>
+                    </ul>
+                    <textarea id="alunos_selecionados" cols="" rows="" readonly></textarea>
+                </div>
+            </section>
+            <h4>Selecione a ocorrência:</h4>
+            <section>
+                <a href="#" onclick="selecionarBotao(this);" target="">
+                    <button onclick="selecionarBotao(this);" class="button_link" data-ocorrencia="Sem uniforme">Sem uniforme</button>
+                <a href="#" onclick="selecionarBotao(this);" target="">
+                    <button class="button_link" data-ocorrencia="Atraso" name="created">Atraso</button>
+                </a>
+                <a href="#" onclick="selecionarBotao(this);" target="">
+                    <button class="button_link" data-ocorrencia="Desrespeito">Desrespeito</button>
+                </a>
+                <a href="#" onclick="selecionarBotao(this);" target="">
+                    <button class="button_link" data-ocorrencia="Saiu da sala">Saiu sem permissão da sala</button>
+                </a>
+                <a href="#" onclick="selecionarBotao(this);" target="">
+                    <button class="button_link" data-ocorrencia="Atrapalhando a aula">Atrapalhando a aula</button>
+                </a>
+                <a href="#" onclick="selecionarBotao(this);" target="">
+                    <button class="button_link" data-ocorrencia="Dificuldade no aprendizado">Dificuldade no aprendizado</button>
+                </a>
+                <a href="#" onclick="selecionarBotao(this);" target="">
+                    <button class="button_link" data-ocorrencia="Agressão verbal ou fisica" >Agressão verbal ou física</button>
+                </a>
+            </section>
+            <section>
+                <a href="#" target="" name="created">
+                    <button class="button_atribuir" onclick="confirmarOperacao2();">Atribuir ocorrência</button>
+                </a>
+            </section>
+        </nav>
+        <footer>
+            <p>Desenvolvido por: Agis - Francisco Diego - Ronan - Samara</p>
+            <p>2023</p>
+        </footer>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
