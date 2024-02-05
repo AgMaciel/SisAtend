@@ -229,13 +229,14 @@ function selecionarAluno(){
 
 //-----funções para capturar os dados das informações em outras páginas - index.html(email), Selecao_curso.html(curso), selecao_serie.html(serie)
 class registro{
-    construtor(email, curso, serie, turma, ocorrencia, alunos){
+    construtor(email, curso, serie, turma, ocorrencia, alunos, data){
         this.email = email;
         this.curso = curso;
         this.serie = serie;
         this.turma = turma;
         this.ocorrencia = ocorrencia;
         this.alunos = alunos;
+        this.data = new Date('x-sheetmonkey-current-date-time');
     }
 }
 
@@ -250,8 +251,9 @@ function confirmarOperacao2() {
     let curso = document.querySelector('#curso_selecionado').textContent;
     let serie = document.querySelector('#serie_selecionada').textContent;
     var turma = document.getElementById('turma_escolhida').textContent;
-    var ocorrencia = document.querySelector('.button_link.selected').getAttribute('data-ocorrencia');
+    var ocorrencia = document.querySelector('.button_link.selected').getAttribute('x-sheetmonkey-current-date-time');
     var alunos = document.getElementById('alunos_selecionados').value;
+    
 
     // Construir o objeto com os dados
     var dados = {
@@ -260,7 +262,8 @@ function confirmarOperacao2() {
         serie: serie,
         turma: turma,
         ocorrencia: ocorrencia,
-        alunos: alunos
+        alunos: alunos,
+        ocorrencia: new Date('x-sheetmonkey-current-date-time')
     };
 
     // Realizar a requisição POST usando Fetch API

@@ -3,8 +3,12 @@
 *{margin: 0; padding: 0;}
 
 body {
-    background-color: #F2F2F2;
+    background-color: #f8f3f3;
+   
+    
 }
+
+
 
 #email{
     font-size: medium;
@@ -13,15 +17,15 @@ body {
 .tela{
     display: flex;
     flex-direction: column;
-    background-color: white;
-    width: 30vw;
+    background-color: rgb(250, 250, 249);
+    width: 100vw;
     height: 100vh;
     margin: 0px auto;
 }
 
 header{
     width: 100%;
-	height: 15vw;
+	height: 100vw;
 }
 
 #img_logo{
@@ -38,6 +42,12 @@ h3{
     width: 100%;
 	height: 12vw;
     text-align: center;
+}
+
+#botaoEmail{
+    display: flex;
+    margin-left: 35vw;
+
 }
 
 #h1_index{
@@ -96,9 +106,11 @@ label {
     font-weight: 500;
     display: inline-block;
     margin-bottom: .5rem;
+    
 }
 .form-control {
     box-shadow: none !important;
+    
 
 }
 
@@ -106,7 +118,7 @@ label {
     width: 28vw;
     height: 3vw;
     padding: 0.5vw 1vw;
-    margin: 0.7vw;
+    margin: 1vw;
     background-color: #36963F;
     border: none;
     border-radius: 5px;
