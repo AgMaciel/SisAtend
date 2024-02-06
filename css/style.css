@@ -3,9 +3,9 @@
 *{margin: 0; padding: 0;}
 
 body {
-    background-color: #f8f3f3;
+    background-color: #da0d0d;
    
-    
+
 }
 
 
@@ -17,19 +17,19 @@ body {
 .tela{
     display: flex;
     flex-direction: column;
-    background-color: rgb(250, 250, 249);
+    background-color: rgb(243, 243, 20);
     width: 100vw;
     height: 100vh;
-    margin: 0px auto;
+   
 }
 
 header{
     width: 100%;
-	height: 100vw;
+	height: 60vw;
 }
 
 #img_logo{
-	height: 100%;
+	height: 80%;
     display: block;
     margin: 0px auto;
 }
@@ -43,15 +43,23 @@ h3{
 	height: 12vw;
     text-align: center;
 }
+#grupoLogin{
+    
+    display: -ms-flexbox;
+   
+
+}
 
 #botaoEmail{
-    display: flex;
-    margin-left: 35vw;
+    justify-content: center;
+    margin: 15% 15% 15% 15%;
+    
 
 }
 
 #h1_index{
     font: 4.5vw 'Roboto 900', sans-serif;
+    font-size: 8vw;
 }
 
 #turma_escolhida{
@@ -60,6 +68,7 @@ h3{
 
 #h3_boas_vindas{
     font: 1.7vw 'Roboto', sans-serif;
+    
 }
 
 .h3_nome_sistema{
@@ -67,18 +76,22 @@ h3{
     font-weight: bold
 }
 
-nav{
-    flex: 1 1 0;
-    width: 17vw;
+/*nav{
+    flex: 1 1 1;
+    margin-left: 0px;
+    width: 1vw;
+    display: inline;
     text-align: center;
     padding: 5px;
-}
+    background-color: #aef7b6;
+}*/
 
 input{
-    width: 26vw;
-    height: 2vw;
-    padding: 0.5vw 1vw;
-    margin: 0.7vw;
+    width: 67.8vw;
+    height: 1.8vw;
+    padding: 1vw 1vw;
+    justify-content: center;
+   
 }
 
 .textOnInput {
@@ -87,7 +100,7 @@ input{
 .textOnInput label {
     position: absolute;
     top: -7%;
-    left: 10%;
+    left: 7%;
     padding: 2px;
     z-index: 1;
 }
@@ -125,6 +138,7 @@ label {
     box-shadow: 2px 2px 2px black;
     color: white;
     font: 1.5vw 'Roboto', sans-serif;
+    margin-left: 30%;
 }
 
 .button_link:hover{
@@ -141,12 +155,16 @@ label {
 
 footer{
     width: 100%;
-	height: 2vw;
+	height: 10vw;
     background-color: rgb(0, 0, 0);
-    font: 0.7vw 'Roboto', sans-serif;
+    font: 2vw 'Roboto', sans-serif;
     color: white;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 5px;
+    margin-bottom: auto;
+    margin-top: 100%;
+   
+    
 }
 
 /*===========Pag: selecao_turma===================*/
