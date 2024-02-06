@@ -17,7 +17,7 @@ body {
 .tela{
     display: flex;
     flex-direction: column;
-    background-color: rgb(243, 243, 20);
+    background-color: white;
     width: 100vw;
     height: 100vh;
    
