@@ -3,33 +3,36 @@
 *{margin: 0; padding: 0;}
 
 body {
-    background-color: #fdfcfc;
-   
-
+    font-family: 'Roboto', sans-serif;
+    background-color: #f6f6f6;
+    color: #223820;
+    font-size: 1.5vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
 }
-
-
 
 #email{
     font-size: medium;
     color:#223820;
+    margin-bottom: 150px;
 }
 .tela{
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: white;
-    width: 100vw;
-    height: 100vh;
+    /*background-color: rgb(76, 255, 5);*/
+    width: 100%;    
    
 }
 
 header{
-    width: 100%;
-	height: 60vw;
+    /*background-color: #36963F;*/
 }
 
 #img_logo{
-	height: 80%;
+	height: 90%;
     display: block;
     margin: 0px auto;
 }
@@ -42,18 +45,20 @@ h3{
     width: 100%;
 	height: 12vw;
     text-align: center;
+    
 }
 #grupoLogin{
-    
+    width: 100%;
+	height: 101vw;
+    justify-content: center;
     display: -ms-flexbox;
    
-
 }
+
 
 #botaoEmail{
     justify-content: center;
-    margin: 15% 15% 15% 15%;
-    
+   
 
 }
 
@@ -76,26 +81,41 @@ h3{
     font-weight: bold
 }
 
-/*nav{
+nav{
     flex: 1 1 1;
     margin-left: 0px;
     width: 1vw;
-    display: inline;
+    display: center;
     text-align: center;
-    padding: 5px;
-    background-color: #aef7b6;
-}*/
+    padding: 10px;
+    
+}
 
 input{
     width: 67.8vw;
     height: 1.8vw;
-    padding: 1vw 1vw;
+    padding: 1.9vw 1vw;
     justify-content: center;
    
 }
+.label-style{
+    width: 24vw;
+    height: 1vh;
+    font: 1.5vw 'Roboto 400', sans-serif;
+    font-weight: 500;
+    display: inline-block;
+    padding-bottom: 1px;
+    
 
+}
 .textOnInput {
+    width: 2vh;
+    height: 40vh;
     position: relative;
+    justify-content: center;
+    padding: 1.5vw 1vw;
+    margin: 7vw;
+    
 }
 .textOnInput label {
     position: absolute;
@@ -103,6 +123,7 @@ input{
     left: 7%;
     padding: 2px;
     z-index: 1;
+   
 }
 .textOnInput label:after {
     content: " ";
@@ -118,31 +139,35 @@ label {
     font: 1.1vw 'Roboto 400', sans-serif;
     font-weight: 500;
     display: inline-block;
-    margin-bottom: .5rem;
+
     
 }
 .form-control {
+    margin-left: 8vw;
     box-shadow: none !important;
-    
+    padding-left: 100px;
+ 
 
 }
 
 .button_link{
-    width: 28vw;
-    height: 3vw;
-    padding: 0.5vw 1vw;
-    margin: 1vw;
+    width: 50vw;
+    height: 5vw;
+    justify-content: center;
     background-color: #36963F;
-    border: none;
+    border: 1px 1px 1px 1px;
     border-radius: 5px;
     box-shadow: 2px 2px 2px black;
     color: white;
     font: 1.5vw 'Roboto', sans-serif;
-    margin-left: 30%;
+    margin-left: 25vw;
+    margin-top: 1vw;
+    
 }
 
 .button_link:hover{
-    width: 28vw;
+    width: 50vw;
+    height: 5vw;
     padding: 0.5vw 1vw;
     background-color: white;
     border: none;
@@ -151,11 +176,12 @@ label {
     color:#36963F;
     font: 1.7vw 'Roboto', sans-serif;
     cursor: pointer;
+   
 }
 
 footer{
     width: 100%;
-	height: 10vw;
+	height: 20vw;
     background-color: rgb(0, 0, 0);
     font: 2vw 'Roboto', sans-serif;
     color: white;
@@ -175,8 +201,8 @@ footer{
 }
 
 .button_serie{
-    width: 8vw;
-    height: 3vw;
+    width: 50vw;
+    height: 5vw;
     padding: 0.5vw 1vw;
     margin-top: 1vw;
     margin-left: 1vw;
@@ -190,8 +216,8 @@ footer{
 }
 
 .button_serie:hover{
-    width: 8vw;
-    height: 3vw;
+    width: 50vw;
+    height: 5vw;
     padding: 0.5vw 1vw;
     margin-top: 1vw;
     margin-left: 1vw;
@@ -212,21 +238,26 @@ h5{
 }
 
 h4{
+    width: 15vw;
     margin-top: 1vw;
-    font: 1vw 'Roboto', sans-serif;
+    font: 2vw 'Roboto', sans-serif;
+    margin-left: 50px;
 }
 
 .button_atribuir{
-    width: 18vw;
-    height: 3vw;
-    padding: 0.5vw 1vw;
-    margin: 4vw 0vw 0vw 5.5vw;
+    width: 50vw;
+    height: 5vw;
+    justify-content: center;
     background-color: #36963F;
-    border: none;
+    border: 1px 1px 1px 1px;
     border-radius: 5px;
     box-shadow: 2px 2px 2px black;
-    color: white;
-    font: 1.5vw 'Roboto', sans-serif;
+    color: rgb(252, 251, 251);
+    font: 1.9vw 'Roboto', sans-serif;
+    margin-left: 25vw;
+    margin-top: 1vw;
+
+  
 }
 
 .button_atribuir:hover{
@@ -248,10 +279,17 @@ h4{
 }
 
 #alunos_selecionados{
-    width: 26.1vw;
-    height: 8vw;
-    padding: 0.5vw 1vw;
-    margin: 0.7vw;
+    width: 50vw;
+    height: 10vw;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px 1px 1px 1px;
+    border-radius: 5px;
+    color: white;
+    font: 1.5vw 'Roboto', sans-serif;
+    margin-left: 25vw;
+    margin-top: 1vw;
+
 }
 
 #listaAlunos{
@@ -277,6 +315,7 @@ h4{
 #listaAlunos li span:hover{
     background: #eee;
 }
+
 
 .item-name{
     margin-left: 7px;
